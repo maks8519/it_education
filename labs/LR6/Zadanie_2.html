@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Задание №2</title>
+	<!-- Привязка внешней таблицы стилей CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body >
+	<!-- Форма -->
+	<form>
+		<!-- Группировка элементов-->
+		<fieldset>
+			<legend>About color</legend>
+			<!-- Поле выбора цвета -->
+            <label>Color<input type="color" name="color" value="#32CD32"></label><br>
+            
+			<!-- Переключатели (выбор одного значения из нескольких) -->
+			<div class="radio-block">
+				<p>Dominant color</p>
+				<input type="radio" name="dominant" value="red" >
+                <label">Red</label><br>
+                <input type="radio" name="dominant" value="green" >
+                <label">Green</label><br>
+                <input type="radio" name="dominant" value="blue" >
+                <label">Blue</label><br>
+                <input type="radio" name="dominant" value="none" >
+                <label">No color</label><br>
+			</div>
+
+			<!-- Пометки в виде флажков -->
+			<div class="checkbox-block">
+				<p>Mixed colors</p>
+				<input type="checkbox" name="red">
+                <label">Red</label><br>
+                <input type="checkbox" name="green">
+                <label">Green</label><br>
+                <input type="checkbox" name="blue">
+                <label">Blue</label><br>
+                <input type="checkbox" name="black">
+                <label">Black</label><br>
+                <input type="checkbox" name="white">
+                <label">White</label><br>
+			</div>
+
+			
+		</fieldset>
+	</form>
+</body>
+</html>

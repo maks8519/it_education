@@ -1,0 +1,54 @@
+/*Для тега тела страницы*/
+body{
+	width:90%; /*ширина*/
+	margin: 0 auto; /* Выравнивание по центру */
+}
+/*Шапка сайта*/
+header{
+	width: 100%;
+}
+/*навигация*/
+nav{
+	width: 100%;
+}
+/*блок main*/
+main{
+	width: 80%;
+	display: inline-block;
+	/*height: 200px;*/
+}
+/*блок aside*/
+aside{
+	width: 18%;
+	display: inline-block;
+	float: right;
+	height: 150px;
+}
+/* группировка для фона*/
+header, nav, main,aside{
+	background: lightgray;
+}
+/*Заголов в тегах сайта HTML5*/
+header h1,nav h1, main h1, aside h1 {
+	text-align:center;
+}
+/*Настройка списка*/
+ul{ list-style-type: none; padding: 15px} /* отключим маркеры для списка */
+/*Настройка ссылок*/
+a:link{color: green;}	/* обычная  */
+a:visited{color: blue;}	/* посещённая  */
+a:active{color: yellow;}/* активная  */
+a:hover{color: lime;} 	/*наведение*/
+/*Настройки для тега article*/
+article {
+	background: WhiteSmoke;
+	width: 90%;	/*ширина*/
+	margin: 0 auto; /*выравнить по ширине*/
+}
+/*Настройки для тега section*/
+section{
+	width: 90%;	/*ширина*/
+	margin: 0 auto;	/*выравнить по ширине*/
+}
+/*Отступы для абзаца*/
+p{padding: 5px}

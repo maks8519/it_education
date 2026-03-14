@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Задание №1</title>
+	<!-- Привязка внешней таблицы стилей CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Подключаем скрипт файл к странице-->
+	<script src="testirovanie.js"></script>
+</head>
+<body >
+	<!--Создадим шапку сайта-->
+	<header>
+		<h1>ТЕСТИРОВАНИЕ</h1>
+	</header>
+	<!-- Блок Main -->
+	<main>
+		<form id="testirovanie">
+			<div>
+				<fieldset>
+					<legend> 1. Какое свойство CSS задаёт высоту элемента?</legend>
+					<p><label><input type="radio" name="vopros1" data-true="1" checked> height</label></p>
+					<p><label><input type="radio" name="vopros1"> width </label></p>
+					<p><label><input type="radio" name="vopros1"> length</label></p>
+				</fieldset>
+				<fieldset>
+					<legend> 2. Какой HTML-тег используется для подчеркивания текста?</legend>
+					<p><label><input type="radio" name="vopros2" data-true="1" checked> &lt;u&gt; </label></p>
+					<p><label><input type="radio" name="vopros2"> &lt;underline&gt; </label></p>
+					<p><label><input type="radio" name="vopros2"> &lt;i&gt; </label></p>
+				</fieldset>
+				<fieldset>
+					<legend> 3. Тег для добавления JavaScript кода на страницу?</legend>
+					<p><label><input type="radio" name="vopros3">  javascript </label></p>
+					<p><label><input type="radio" name="vopros3" data-true="1" checked> script</label> </p>
+					<p><label><input type="radio" name="vopros3"> js </label> </p>
+				</fieldset>
+			</div>
+			<fieldset>
+				<legend> 4. Какие теги используются для создания списков?</legend>
+				<p><label><input type="checkbox" name="vopros4" data-true="1.5" checked> &lt;ul&gt; </label></p>
+				<p><label><input type="checkbox" name="vopros4" data-true="1" checked> &lt;li&gt; </label></p>
+				<p><label><input type="checkbox" name="vopros4"> &lt;list&gt; </label></p>
+			</fieldset>
+			<fieldset>
+				<legend> 5. Какие форматы можно использовать для задания цвета в CSS?</legend>
+				<p><label><input type="checkbox" name="vopros5" data-true="1" checked> HEX, название цвета </label></p>
+				<p><label><input type="checkbox" name="vopros5" data-true="1.7" checked> RGB/RGBA, HSL/HSLA </label></p>
+				<p><label><input type="checkbox" name="vopros5"> CMYK </label></p>
+			</fieldset>
+			<fieldset>
+				<legend> 6.Какие языки относятся к основным веб-технологиям фронтенда?</legend>
+				<p><label><input type="checkbox" name="vopros6" data-true="1" checked> HTML</label> </p>
+				<p><label><input type="checkbox" name="vopros6" data-true="1.2" checked> CSS </label></p>
+				<p><label><input type="checkbox" name="vopros6"> PHP </label></p>
+			</fieldset>
+			<section>
+				<p><label for="vopros7">7. Какое свойство CSS отвечает за цвет текста?</label><input type="text" id="vopros7" name="vopros7" data-ans="color" data-true="1" value="color"></p>
+				<p><label for="vopros8">8. Элемент HTML для обозначения нижнего колонтитула?</label><input type="text" id="vopros8" name="vopros8" data-ans="footer" data-true="1" value="footer"></p>
+				<p><label for="vopros9">9. Метод JavaScript для вывода сообщения пользователю?</label><input type="text" id="vopros9" name="vopros9" data-ans="alert" data-true="1" value="alert"></p>
+				<p><label for="vopros10">10. Тег для создания списка с маркерами?</label><input type="text" id="vopros10" name="vopros10" data-ans="ul" data-true="1" value="ul"></p>
+			</section>		
+		</form>
+	<button onClick="otvetit();">Отправить ответы</button>
+	</main>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Задание №2</title>
+	
+</script>
+</head>
+<body >
+	<script type="text/javascript">
+		// переменная для хранения введённого числа и была доступна за пределами функции
+		var value = null;
+		//ввод числа
+		function inNumber(){
+			//Считаем значение из prompt
+			value = prompt('Введите значение: ','3');
+		}	
+
+		function Otschet(){
+			//Считаем значение из prompt
+			// проверка корректности ввода
+	      	if (isNaN(value) || value === null) {
+	        	alert("Wrong number");
+	       	}
+			//проверка отрицательное число?
+			if (value < 0) {
+        		value =  value * -1;
+      		}
+			//обратный отсчет
+			for (var i = value; i>=0; i--){
+				if (i == 0){
+					alert("Finish");
+				}
+				else{
+					alert(i);
+				}
+			}
+		}	
+	</script>
+	
+	<h1>Обратный отсчет</h1>
+	<button onclick="inNumber()">Ввести число</button>
+	<button onclick="Otschet()">Обратный отсчёт</button>
+</body>
+</html>

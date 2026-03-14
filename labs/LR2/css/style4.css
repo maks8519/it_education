@@ -1,0 +1,13 @@
+
+.ol{
+	list-style-type: lower-alpha;
+	border: 10px dotted white;
+	background-color: pink;
+	width: 250px; 
+	margin: 0 auto;
+
+}
+
+.li{
+	text-align: center;
+}

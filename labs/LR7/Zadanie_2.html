@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Задание №2</title>
+	<script type="text/javascript">
+
+</script>
+</head>
+<body >
+	<script type="text/javascript">
+		// Объявляем переменную счётчика
+		var сounter = 0;
+
+		function okCheck(){
+			 // confirm возвращает true (1) или false (0)
+			 //counter += confirm("Нажмите OK или Отмена");
+			сounter += confirm('Нажмите кнопку ОК или Отмена');
+			// Выводим текущее значение счётчика
+      		alert('Значение счетчика: ' + сounter);
+		}
+	</script>
+	
+	<h1>Счетчик</h1>
+	<button onclick="okCheck()">Счетчик</button>
+</body>
+</html>

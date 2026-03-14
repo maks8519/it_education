@@ -1,0 +1,30 @@
+a:link {
+	text-decoration: none; /* Уберем подчеркивание обычных ссылок */
+	transition: all 3s ease 1s; /*включим анимацию. 
+	анимировать все свойства Продолжительность анимации 
+	вид распределения анимации во времени Задержка до анимации*/
+}
+
+/*классы заголовков*/
+.header1{color: orange;}
+.header2{color: royalblue;}
+.header3{color: darkgreen;}
+
+/* Десйствия при наведение на ссылку атрибут со значениями. Значения используються как анимация*/
+.header1 a:hover{text-decoration: overline; color: tomato; font-size: 26px; letter-spacing: 24px;} /*полоса сверху, цвет, размер шрифта и интервал между символами в пределах элемента. */
+.header2 a:hover{text-decoration: underline; color: turquoise; font-size: 26px; letter-spacing: 24px;} /*полоса снизу, цвет, размер шрифта и интервал между символами в пределах элемента. */
+.header3 a:hover{text-decoration: line-through; color: mediumspringgreen; font-size: 26px; letter-spacing: 24px;} /*зачеркнутый, цвет, размер шрифта и интервал между символами в пределах элемента. */
+
+/*Задаем цвета обычной ссылки, активной, посещенной*/
+/*Атрибуты и значения для 1 ссылки*/
+.header1 a:link { color: crimson; }        /* обычная  */
+.header1 a:visited { color: plum; }   /* посещённая  */
+.header1 a:active { color: red; }          /* активная  */
+/*Атрибуты и значения для 2 ссылки*/
+.header2 a:link { color: deepskyblue; }    /* обычная  */
+.header2 a:visited { color: steelblue; }   /* посещённая  */
+.header2 a:active { color: dodgerblue; }   /* активная  */
+/*Атрибуты и значения для 3 ссылки*/
+.header3 a:link { color: seagreen; }       /* обычная  */
+.header3 a:visited { color: forestgreen; } /* посещённая  */
+.header3 a:active { color: limegreen; }    /* активная  */

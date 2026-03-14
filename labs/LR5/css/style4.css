@@ -1,0 +1,96 @@
+/*Для тега тела страницы*/
+body{
+	width:90%; /*ширина*/
+	margin: 0 auto; /* Выравнивание по центру */
+	font-size: 3vmin;
+}
+/*Шапка сайта*/
+header{
+	width: 100%;
+}
+/*навигация*/
+nav{
+	width: 100%;
+/*	height: 50px;*/
+ margin-bottom: 20px; /* расстояние снизу */
+ font-size: 1.3e.m;
+}
+/*блок main*/
+main{
+	width: 80%;
+	display: inline-block;
+}
+/*блок aside*/
+aside{
+	width: 18%;
+	display: inline-block;
+	float: right;
+	height: 150px;
+}
+/* группировка для фона*/
+header, nav, main,aside{
+	background: lightgray;
+}
+/*Заголов в тегах сайта HTML5*/
+header h1,nav h1, main h1, aside h1 {
+	text-align:center; 
+	font-weight: normal;
+}
+/*Настройка списка*/
+section ul{ list-style-type: none; padding: 15px;} /* отключим маркеры для списка */
+/*Настройка ссылок*/
+a:link{color: green;}	/* обычная  */
+a:visited{color: blue;}	/* посещённая  */
+a:active{color: yellow;}/* активная  */
+a:hover{color: lime;} 	/*наведение*/
+/*Настройки для тега article*/
+article {
+	background: WhiteSmoke;
+	width: 90%;	/*ширина*/
+	margin: 0 auto; /*выравнить по ширине*/
+}
+/*Настройки для тега section*/
+section{
+	width: 90%;	/*ширина*/
+	margin: 0 auto;	/*выравнить по ширине*/
+}
+/*Отступы для абзаца*/
+p{padding: 5px}
+
+/* настройки для меню */
+/*настройки списка меню*/
+nav ul{
+	list-style-type: none; /*удалить маркеры у списка*/
+	margin: 0;
+	padding-right: 20%; /*отсуп справа для размера картинки чтоб не учитывать при выравнивании ссылок*/
+	text-align: center; /*выравним по центру*/
+	background-image: url(../img/fruit.jpg); /*путь до картинки*/
+	background-size: 20%;
+	background-position: center right;/*где именно размещается фон внутри элемента*/
+	background-repeat: no-repeat; /*не повторять картинку*/
+	height: 50px;
+}
+
+/*настройки элементов списка меню*/
+nav ul li{
+	display: inline-block; /*выравним элементы в строку*/
+	margin: 0px 10px; /*сверху/снизу по 0 слева справа по 10*/
+	padding: 10px;
+	border: 5px solid transparent;  /* рамка есть всегда, но невидимая чтоб не прыгало надпись меню при наведении */
+}
+
+/*Настройка ссылок меню*/
+/*Общие настройки для ссылок*/
+nav a{
+	color: green;
+	margin: 0px;
+	text-decoration: none; /*уберем нижнее подчеркивание под ссылками*/
+	font-size: 1.2em; /*размер шрифта ссылок*/
+	transition: all 0.5s ease-in-out; /*параметры анимации*/ 
+}
+/*Зададим цвет посещеных и наведения на ссылки*/
+nav a:hover, nav a:visited{color: green;}
+
+nav ul li:hover { 
+border: 5px solid green; /*добавим рамку при наведении*/
+}

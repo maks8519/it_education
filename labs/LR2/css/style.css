@@ -1,0 +1,26 @@
+.body{
+	background-color: cyan;
+	background-image: url(../img/fruit.jpg);
+	background-size: cover;
+}
+.header1{
+	text-transform: uppercase;
+	text-decoration: overline;
+	color: orange;
+	text-align: left;
+}
+.header2{
+	text-transform: capitalize;
+	text-decoration: underline;
+	color: royalblue;
+	text-align: center;
+}
+.header3{
+	text-transform: lowercase;
+	text-decoration: line-through;
+	color: darkgreen;
+	text-align: right;
+}
+.header1,.header2,.header3{
+	background-color: white;
+}

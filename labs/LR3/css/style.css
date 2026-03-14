@@ -1,0 +1,26 @@
+/*классы заголовков*/
+.header1{color: orange;}
+.header2{color: royalblue;}
+.header3{color: darkgreen;}
+
+/* Уберем подчеркивание обычных ссылок */
+a:link {text-decoration: none;}
+
+/* Десйствия при наведение на ссылку атрибут со значениями*/
+.link1:hover{text-decoration: overline;color: tomato;} /*полоса сверху и цвет*/
+.link2:hover{text-decoration: underline;color: turquoise;} /*полоса снизу и цвет*/
+.link3:hover{text-decoration: line-through;color: mediumspringgreen; } /*зачеркнутый и цвет*/
+
+/*Задаем цвета обычной ссылки, активной, посещенной*/
+/*Атрибуты и значения для 1 ссылки*/
+.link1:link { color: crimson; }        /* обычная  */
+.link1:visited { color: plum; }   /* посещённая  */
+.link1:active { color: red; }          /* активная  */
+/*Атрибуты и значения для 2 ссылки*/
+.link2:link { color: deepskyblue; }    /* обычная  */
+.link2:visited { color: steelblue; }   /* посещённая  */
+.link2:active { color: dodgerblue; }   /* активная  */
+/*Атрибуты и значения для 3 ссылки*/
+.link3:link { color: seagreen; }       /* обычная  */
+.link3:visited { color: forestgreen; } /* посещённая  */
+.link3:active { color: limegreen; }    /* активная  */

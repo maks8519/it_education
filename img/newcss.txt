@@ -1,0 +1,295 @@
+/*Для тега тела страницы*/
+body{
+	width:90vw; /*ширина*/
+	margin: 58px auto; /* Выравнивание по центру */
+	font:16px/1.5 system-ui,Segoe UI; /* Общий шрифт и межстрочный интервал */
+	color: #e6e6e6;
+	background: #0f111a;	
+}
+
+/* Убираем маркеры у всех списков */
+ul{
+	list-style-type: none;
+}
+/* Убираем подчеркивание у ссылок */
+a {
+    text-decoration: none;
+}
+
+/* группировка для фона Общие стили для основных структурных блоков ===
+Закругленные углы, фон и тень */
+footer,aside,main,nav,article,header,fieldset,legend {
+	background: #1c1f2b;
+	border: 1px solid #2a2e40;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+header {
+color: white;
+/*width:100%;*/
+	text-align: center;
+	position: fixed;
+	left:0;
+	top: 90px;
+	width:95vw;
+	height: 550px;
+	/* Фоновое изображение + затемнение */
+	background-image: url("../img/img1.jpg");
+	background-size: cover;
+	background-position: center 90%;
+	background-blend-mode: soft-light;
+	background-color: rgba(0,0,0,0.3);
+
+top: 550px;
+}
+
+/* Меню навигации */
+nav{
+	/*width: 100%;*/
+	width:95vw;
+	position: fixed;
+	top:0;
+	left:0;
+	margin-bottom: 20px; /* расстояние снизу */
+}
+
+nav ul{
+	list-style-type: none; /*удалить маркеры у списка*/
+	margin-top: : 0px;
+	text-align: center; /*выравним по центру*/
+	height: 50px;
+}
+
+/*настройки элементов списка меню*/
+nav ul li{
+	display: inline-block; /*выравним элементы в строку*/
+	margin: 0px 10px; /*сверху/снизу по 0 слева справа по 10*/
+	padding: 10px;
+	border: 2px solid transparent;  /* рамка есть всегда, но невидимая чтоб не прыгало надпись меню при наведении */
+	border-radius: 20px;
+	transition: border 0.8s ease-in-out, padding 0.3s ease-in-out;
+}
+
+/*Настройка ссылок меню*/
+/*Общие настройки для ссылок*/
+nav a{
+	color: green;
+	margin: 0px;
+	text-decoration: none; /*уберем нижнее подчеркивание под ссылками*/
+	font-size: 1.2em; /*размер шрифта ссылок*/
+	transition: all 0.5s ease-in-out; /*параметры анимации*/ 
+}
+/*Зададим цвет посещеных и наведения на ссылки*/
+nav a:hover{color:red;} 
+nav a:visited{color: green;}
+
+nav ul li:hover { 
+border: 5px solid #ff6a00; /*добавим рамку при наведении*/
+border-radius:20px;
+background: rgba(255, 0, 0, 0.1);
+}
+nav ul li.active {
+    border-bottom: 2px solid #ff6a00;
+	border-radius:8px;
+    font-weight: bold;
+}
+
+nav ul li:hover a {
+    color: red; 
+}
+
+/*блок main*/
+main{
+	display: inline-block;
+	margin: 20px 1vw 0 5vw;
+	padding: 0 1vw 0 0vw;
+	width: 56vw;
+	
+}
+
+/*блок aside*/
+aside{
+	display: inline-block;
+	float: right;
+	margin: 20px 5vw 0 0vw;
+	padding: 0 0 0 1vw;
+	width: 20vw;
+	vertical-align: top;
+}
+/*блок footer*/
+footer{
+	text-align: center;
+	color: #a9a9a9;
+		margin: 20px 1vw 0 5vw;
+	padding: 0 1vw 0 0vw;
+	width: 56vw;
+	/*margin: 10px 5vw 0 5vw;
+	padding: 0;
+    width: 80vw;
+    box-sizing: border-box;*/
+	
+}
+
+aside h1, article h1,section h1{
+	text-align: center;
+}
+
+/*Ссылки aside*/
+aside a:link {
+  text-transform: uppercase;
+  color: #ff6a00;
+  font-size: 2vw;
+}
+aside  a:visited {
+	color: #ff6a00;
+}
+aside a:hover {
+  color: #dd864b; 
+}
+article, article p,fieldset{
+	 margin: 20px 3vw;
+	 background: linear-gradient(180deg, rgba(255,255,255,.02), transparent), #1c1f2b;
+}
+
+/*Блоки для index.html*/
+
+
+ header {
+  height: 80vh;
+  width: 99%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #2a2e40;
+  border-radius: 0px 0px 80px 80px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+
+}
+ header h1{
+	width: 99%;
+  position: absolute;
+	font-size:10vh;
+	margin-top:100px;
+	 margin-left: 150px;
+	  text-transform: uppercase;
+	 text-align: left
+	
+}
+
+#top_container header h3{
+	width: 99%;
+  position: absolute;
+	font-size:15vh;
+	margin-top: 18%;
+	text-align:right;
+}
+
+ nav {
+	position: absolute;
+	width: 99%;
+    top: 0%;
+	left: 0;
+	border: 1px solid #2a2e40;
+	border-radius: 0px ;
+	box-shadow: 0 10px 30px rgba(0,0,0,.35);
+	background-color: rgba(0,0,0,0.5);
+}
+
+#container{
+	margin-top: 82vh;
+}
+
+#container2{
+	margin-top: 600px;
+	position: absolute;
+}
+
+/*Для страницы тестирования*/
+header,nav
+{
+	position: absolute;
+}
+legend{
+	font-weight: bold;
+}
+
+/*настройки для всех кнопок*/
+button {
+	margin: 2vw 2vw;
+	padding: 10px 16px;
+	border-radius: 10px;
+	color: #e6e6e6;
+	border: 1px solid #2a2e40;
+	background: rgba(0,0,0,0.2);
+	text-decoration: none;
+	font-weight: 600;
+}
+button:hover{
+	background: #ff8533;
+}
+/*настройки для всех текстовых полей*/
+input[type="text"] {
+	width: 150px;
+  	padding: 5px 10px;
+
+  	margin-top: 5px;
+  	margin-left: 10px;
+ 
+}
+
+/*настройки для страницы лабы*/
+aside .labi_aside a {
+    font-size: 1vw;
+	font-weight: 600;
+}
+
+.lab-panel,iframe[name="content-labs"] {
+	text-align: center;
+	width: 53vw;
+	height: 100vh;
+	margin: 20px 2vw;
+	border: 1px solid #2a2e40;
+	border-radius: 20px;
+	box-shadow: 0 10px 30px rgba(0,0,0,.35);
+	background: linear-gradient(180deg, rgba(255,255,255,.02), transparent), #1c1f2b;
+}
+	
+iframe[name="content-labs"] {
+		background: whitesmoke;
+		border-radius: 0px;
+    width: 97%;
+		height: 80vh;
+    margin: 10px;     
+}
+
+.lab-panel button {
+	margin: 10px 0 10px 2vw;
+	padding: 10px 16px;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.lab-panel button:disabled {
+    background: #444;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.topic {
+    display: block;
+    text-decoration: none;
+    color: orange;
+}
+
+.topic .title {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+}
+
+.topic .name {
+    display: block;
+    margin-top: 5px;
+}

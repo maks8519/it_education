@@ -1,0 +1,31 @@
+/*классы блоков div*/
+.labels,.inputs {
+	display: inline-block; /*Выравним чтоб были как столбцы*/
+	vertical-align: top;   /*Выравнивание по верху*/
+	margin: 20px 10px 20px 10px; /*Отступы*/
+}
+
+.labels label {
+  	display: block;          /* каждая метка на новой строке */
+  	margin-bottom: 10px;	/* отступ снизу */
+  	width: 150px;        /* одинаковая ширина для всех подписей */
+}
+
+.inputs input {
+	display: block; /*каждый элемент на новой строке*/
+  	margin-bottom: 5px; /* отступ снизу */
+}
+
+span{
+	color: red; /*цвет для звездочки*/
+}
+form{
+	width: 550px;
+}
+input[type="submit"],input[type="reset"] {
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: transparent;
+  width: 75px;
+}

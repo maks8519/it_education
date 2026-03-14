@@ -1,0 +1,10 @@
+/*классы блоков div*/
+.radio-block, .checkbox-block {
+    display: inline-block; /* Размещаем блоки на одной строке */
+    vertical-align: top;   /* Выравнивание по верху */
+    margin: 0px 50px 0px 0px; /* Отступы */
+}
+
+form{
+	width: 350px;
+}

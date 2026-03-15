@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Учебный курс</title>
+	<!-- Привязка внешней таблицы стилей CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Скрипт рандомного изображения
+	<script src="js/random.js" defer></script>-->
+	<!-- Скрипт загрузки изображения-->
+	<script src="js/zadanie_load.js" defer></script>
+</head>
+<body >
+	<div>
+		<!--Создадим шапку сайта-->
+		<header id="con_top">
+			<h1>УЧЕБНЫЙ КУРС</h1>
+			<h3>Информационные технологии в образовании</h3>
+		</header>
+		<!-- Меню навигации -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="kurs.html">Материалы курса</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div id="container2">
+		<main>
+			
+			<!-- Блок для заголовков и текста-->
+			<section>
+				<!-- Блок article 1-->
+				<h1>Материалы курса</h1>							
+				<div class="kurs-panel">
+					<!--<h2>Просмотр лабораторной №</h2><h2 id="info"></h2>-->
+					<h2 id="info">Материалы по ТЕМЕ № <span id="txtkursNum"></span></h2>
+					<button id="z1">Презентация</button>
+				    <button id="z2">Лекция</button>
+				    <button id="z3">Практическое задание</button>
+				   <!-- <button id="z4">Задание 4</button>
+				    <button id="z5">Задание 5</button> -->
+	    			
+	    			<iframe name="content-kurss" srcdoc="Здесь будет отображаться содержимое файла html лабороторной работы" width="240" frameborder="0" >.
+					</iframe>
+				</div>
+			</section>
+		</main>
+		<aside>
+		<!--<h1>Разделы курса</h1> -->
+		<!-- Блок для оглавления-->
+			<section>
+					<h1>Разделы курса</h1>
+					<!--Маркированый список с сылками-->
+					<ul class="kursi_aside">
+						<li>
+						  <a href="#" onclick="selectkurs(1)">
+							  <span>Тема №1<br></span>
+							  <span>Информационные технологии в образовании.<br></span>
+							  <span>Этапы развития ИТ.</span>
+						  </a>
+						  <hr>
+						</li>
+						<li>
+						  <a href="#" onclick="selectkurs(2)">
+							  <span>Тема №2<br></span>
+							  <span>В этапе разработки</span>
+						  </a>
+						  <hr>
+						</li>
+						<li>
+						  <a href="#" onclick="selectkurs(3)">
+							  <span>Тема №3<br></span>
+							  <span>В этапе разработки</span>
+						  </a>
+						</li>
+
+
+					</ul>
+					
+			</section>
+	</aside>
+	<footer> <h1>© 2026 Бекетов Максим, группа ЗИСТуд-124<h1></footer>
+	</div>
+</body>
+</html>

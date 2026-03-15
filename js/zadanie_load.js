@@ -48,7 +48,7 @@ function showMessage(text) {
 }
 
 function load_zadanie_modi(num) {
-	 / Получаем ссылку на нужный материал
+	 // Получаем ссылку на нужный материал
   const url = kursFiles[currentkurs]?.[num];
 	// Если ссылка отсутствует — выводим сообщение
   if (!url) {
